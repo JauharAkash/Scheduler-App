@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Scheduler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGl-40-uzC">
+                                <rect key="frame" x="20" y="89" width="374" height="194"/>
+                                <string key="text">About The App: This app is solely meant for Hofstra University's students to help them make their schedules. This app will help students to pick the best combinations of classes for Computer Science and Computer Science and Cybersecurity majors</string>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="21"/>
+                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To The Scheduler App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5o-JH-PeM">
+                                <rect key="frame" x="20" y="44" width="357" height="37"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="37"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fa0-Jw-uSi">
+                                <rect key="frame" x="8" y="291" width="398" height="57"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="All Classes To Be Taken In Your First Semester"/>
+                                <connections>
+                                    <action selector="Button:forEvent:" destination="zgC-O5-elj" eventType="touchUpInside" id="caG-6q-Jkb"/>
+                                    <segue destination="YSq-TZ-I6j" kind="show" id="uuz-qp-ghI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOY-dH-DDc">
+                                <rect key="frame" x="8" y="356" width="398" height="57.5"/>
+                                <color key="backgroundColor" red="0.68973476639999998" green="0.6283269091" blue="0.97758549449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="All Classes To Be Taken In Your Second Semester"/>
+                                <connections>
+                                    <action selector="Button:forEvent:" destination="zgC-O5-elj" eventType="touchUpInside" id="HNI-Ss-tIP"/>
+                                    <segue destination="YSq-TZ-I6j" kind="show" id="72Z-Zu-XxV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oae-iV-Zpl">
+                                <rect key="frame" x="8" y="421.5" width="398" height="57"/>
+                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="All Classes To Be Taken In Your Third Semester">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:forEvent:" destination="zgC-O5-elj" eventType="touchUpInside" id="wZD-5t-6PG"/>
+                                    <segue destination="VwI-2z-sdS" kind="show" id="t4n-Yn-Fxg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Joc-uQ-Aln">
+                                <rect key="frame" x="8" y="486.5" width="398" height="57.5"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="All Classes To Be Taken In Your Fourth Semester">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:forEvent:" destination="zgC-O5-elj" eventType="touchUpInside" id="3BA-k7-mD5"/>
+                                    <segue destination="VwI-2z-sdS" kind="show" id="jEa-Iw-ba7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciI-iB-vmy">
+                                <rect key="frame" x="8" y="552" width="398" height="57"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="All Classes To Be Taken In Your Fifth Semester">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:forEvent:" destination="zgC-O5-elj" eventType="touchUpInside" id="Mc5-c8-AjO"/>
+                                    <segue destination="apc-xQ-I4O" kind="show" id="SfI-U0-ODL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8my-QF-ZUs">
+                                <rect key="frame" x="8" y="617" width="398" height="57.5"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="All Classes To Be Taken In Your Sixth Semester">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:forEvent:" destination="zgC-O5-elj" eventType="touchUpInside" id="NCr-zS-Dqf"/>
+                                    <segue destination="apc-xQ-I4O" kind="show" id="duN-Ts-7Sa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImE-sm-71q">
+                                <rect key="frame" x="8" y="682.5" width="398" height="57"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="All Classes To Be Taken In Your Seventh Semester">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:forEvent:" destination="zgC-O5-elj" eventType="touchUpInside" id="oc3-6M-iMm"/>
+                                    <segue destination="9wb-9k-Flx" kind="show" id="qEV-Ab-0bm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZo-6Q-2uP">
+                                <rect key="frame" x="8" y="747.5" width="398" height="57.5"/>
+                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="All Classes To Be Taken In Your Eighth Semester">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:forEvent:" destination="zgC-O5-elj" eventType="touchUpInside" id="nYs-Sg-muO"/>
+                                    <segue destination="9wb-9k-Flx" kind="show" id="v34-XM-45p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GK8-46-aiT">
+                                <rect key="frame" x="8" y="813" width="398" height="57"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Click Here To View Hofstra's Faculty Members">
+                                    <color key="titleColor" red="0.97609727989999995" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button29:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uUw-TX-mE9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kZo-6Q-2uP" firstAttribute="height" secondItem="fa0-Jw-uSi" secondAttribute="height" id="0XF-Lm-jnh"/>
+                            <constraint firstItem="kZo-6Q-2uP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="160-9l-MTh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Joc-uQ-Aln" secondAttribute="trailing" constant="8" id="1Mm-SN-mDs"/>
+                            <constraint firstItem="GK8-46-aiT" firstAttribute="height" secondItem="fa0-Jw-uSi" secondAttribute="height" id="1aw-L6-yfZ"/>
+                            <constraint firstItem="sGl-40-uzC" firstAttribute="top" secondItem="R5o-JH-PeM" secondAttribute="bottom" constant="8" id="1wh-vf-8nW"/>
+                            <constraint firstItem="FOY-dH-DDc" firstAttribute="height" secondItem="fa0-Jw-uSi" secondAttribute="height" id="2fY-e6-mJ3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kZo-6Q-2uP" secondAttribute="trailing" constant="8" id="4Fg-zu-LgC"/>
+                            <constraint firstItem="sGl-40-uzC" firstAttribute="top" secondItem="R5o-JH-PeM" secondAttribute="bottom" constant="8" id="7jl-ZH-W8D"/>
+                            <constraint firstItem="ciI-iB-vmy" firstAttribute="height" secondItem="fa0-Jw-uSi" secondAttribute="height" id="7tu-Kt-KIm"/>
+                            <constraint firstItem="R5o-JH-PeM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8DX-ow-qHG"/>
+                            <constraint firstItem="8my-QF-ZUs" firstAttribute="height" secondItem="fa0-Jw-uSi" secondAttribute="height" id="9OE-OF-Ozq"/>
+                            <constraint firstItem="oae-iV-Zpl" firstAttribute="height" secondItem="fa0-Jw-uSi" secondAttribute="height" id="9eN-kD-6Ee"/>
+                            <constraint firstItem="Joc-uQ-Aln" firstAttribute="height" secondItem="fa0-Jw-uSi" secondAttribute="height" id="AV8-qR-nc8"/>
+                            <constraint firstItem="R5o-JH-PeM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AZ0-lN-tCI"/>
+                            <constraint firstItem="GK8-46-aiT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="8" id="E6F-nN-C8L"/>
+                            <constraint firstItem="fa0-Jw-uSi" firstAttribute="top" secondItem="sGl-40-uzC" secondAttribute="bottom" constant="8" id="HXb-od-SzF"/>
+                            <constraint firstItem="ImE-sm-71q" firstAttribute="height" secondItem="fa0-Jw-uSi" secondAttribute="height" id="JtC-uh-Hm9"/>
+                            <constraint firstItem="8my-QF-ZUs" firstAttribute="top" secondItem="ciI-iB-vmy" secondAttribute="bottom" constant="8" id="Nhl-qA-JBh"/>
+                            <constraint firstItem="Joc-uQ-Aln" firstAttribute="width" secondItem="fa0-Jw-uSi" secondAttribute="width" id="ON6-X2-R82"/>
+                            <constraint firstItem="GK8-46-aiT" firstAttribute="top" secondItem="kZo-6Q-2uP" secondAttribute="bottom" constant="8" id="Q7d-tN-bNL"/>
+                            <constraint firstItem="FOY-dH-DDc" firstAttribute="top" secondItem="fa0-Jw-uSi" secondAttribute="bottom" constant="8" id="RRM-86-FMQ"/>
+                            <constraint firstItem="ciI-iB-vmy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="RX3-yg-WlY"/>
+                            <constraint firstItem="fa0-Jw-uSi" firstAttribute="top" secondItem="sGl-40-uzC" secondAttribute="bottom" constant="8" id="SNl-v7-kQb"/>
+                            <constraint firstItem="oae-iV-Zpl" firstAttribute="top" secondItem="FOY-dH-DDc" secondAttribute="bottom" constant="8" id="TS0-Q3-1yT"/>
+                            <constraint firstItem="Joc-uQ-Aln" firstAttribute="top" secondItem="oae-iV-Zpl" secondAttribute="bottom" constant="8" id="UhF-7p-WiF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fa0-Jw-uSi" secondAttribute="trailing" constant="8" id="V1V-Q9-XUF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GK8-46-aiT" secondAttribute="trailing" constant="8" id="ZrS-z7-mRV"/>
+                            <constraint firstItem="Joc-uQ-Aln" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="cFo-ig-0co"/>
+                            <constraint firstItem="FOY-dH-DDc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="cIl-HY-3IK"/>
+                            <constraint firstItem="FOY-dH-DDc" firstAttribute="width" secondItem="fa0-Jw-uSi" secondAttribute="width" id="cKy-jK-8Ac"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FOY-dH-DDc" secondAttribute="trailing" constant="8" id="cSG-so-4CB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8my-QF-ZUs" secondAttribute="trailing" constant="8" id="ef7-DL-okH"/>
+                            <constraint firstItem="GK8-46-aiT" firstAttribute="width" secondItem="fa0-Jw-uSi" secondAttribute="width" id="fdx-aM-F3z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ImE-sm-71q" secondAttribute="trailing" constant="8" id="fsh-N4-xHn"/>
+                            <constraint firstItem="oae-iV-Zpl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="hPA-di-Iy7"/>
+                            <constraint firstItem="ciI-iB-vmy" firstAttribute="top" secondItem="Joc-uQ-Aln" secondAttribute="bottom" constant="8" id="hsu-96-z9I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R5o-JH-PeM" secondAttribute="trailing" constant="37" id="kbC-g4-fAS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sGl-40-uzC" secondAttribute="trailing" constant="20" id="klC-oQ-qP7"/>
+                            <constraint firstItem="ImE-sm-71q" firstAttribute="top" secondItem="8my-QF-ZUs" secondAttribute="bottom" constant="8" id="nUz-Ih-shU"/>
+                            <constraint firstItem="kZo-6Q-2uP" firstAttribute="top" secondItem="ImE-sm-71q" secondAttribute="bottom" constant="8" id="nh3-SF-HWB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ciI-iB-vmy" secondAttribute="trailing" constant="8" id="scE-bl-TXL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oae-iV-Zpl" secondAttribute="trailing" constant="8" id="tAA-nv-oDV"/>
+                            <constraint firstItem="sGl-40-uzC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="u7C-We-JtT"/>
+                            <constraint firstItem="GK8-46-aiT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="uE4-ql-hEK"/>
+                            <constraint firstItem="ciI-iB-vmy" firstAttribute="width" secondItem="fa0-Jw-uSi" secondAttribute="width" id="vnN-E4-pL1"/>
+                            <constraint firstItem="ImE-sm-71q" firstAttribute="width" secondItem="fa0-Jw-uSi" secondAttribute="width" id="wkO-5i-6u5"/>
+                            <constraint firstItem="8my-QF-ZUs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="x0T-5u-lQO"/>
+                            <constraint firstItem="kZo-6Q-2uP" firstAttribute="width" secondItem="fa0-Jw-uSi" secondAttribute="width" id="xaa-Xd-ZHT"/>
+                            <constraint firstItem="ImE-sm-71q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="yZi-oc-s33"/>
+                            <constraint firstItem="8my-QF-ZUs" firstAttribute="width" secondItem="fa0-Jw-uSi" secondAttribute="width" id="ytb-Ai-KwS"/>
+                            <constraint firstItem="fa0-Jw-uSi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="zUu-yR-yzl"/>
+                            <constraint firstItem="oae-iV-Zpl" firstAttribute="width" secondItem="fa0-Jw-uSi" secondAttribute="width" id="zW8-tt-Us9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cqW-Zf-tS7">
+            <objects>
+                <viewController id="VwI-2z-sdS" customClass="ViewController" customModule="Scheduler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KRA-rW-cvv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sophomore Year: Third Semester" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjt-NJ-NUZ">
+                                <rect key="frame" x="20" y="45" width="374" height="32"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhT-9H-EbD">
+                                <rect key="frame" x="20" y="143" width="311" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="CSC17: Java Programming">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="Zdp-b4-xFd"/>
+                                    <action selector="Button8:" destination="VwI-2z-sdS" eventType="touchUpInside" id="0d1-CP-NFg"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="4fh-lb-dLA"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="GsT-Yn-dOy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfU-TI-ueJ">
+                                <rect key="frame" x="20" y="91" width="372" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="CSC15S: Fund. of Cybersecurity">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="f4B-A1-DmY"/>
+                                    <action selector="Button7:" destination="VwI-2z-sdS" eventType="touchUpInside" id="GxJ-MH-i2a"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="F78-2z-709"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="GAp-X3-kHP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe3-xx-QVW">
+                                <rect key="frame" x="20" y="196" width="332" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="CSC110: Comp. Architecture">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="vJi-NM-WMj"/>
+                                    <action selector="Button9:" destination="VwI-2z-sdS" eventType="touchUpInside" id="VsS-f7-H2A"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="a6x-eS-KNi"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="qEr-mT-aF2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kc8-xk-kIU">
+                                <rect key="frame" x="20" y="249" width="269" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="CSC163: Comp. Ethics">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button10:" destination="VwI-2z-sdS" eventType="touchUpInside" id="9RG-Tr-1wY"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="vWB-JT-mex"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="U3M-tW-fqk"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="qZ9-IE-jrO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4L-fp-D0q">
+                                <rect key="frame" x="20" y="409.5" width="342" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="CSC112: Operating Systems">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button12:" destination="VwI-2z-sdS" eventType="touchUpInside" id="dEk-cV-fKW"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="4ay-gU-qgb"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="fEO-lA-Eqe"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="xR7-tC-msS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQ2-Qp-Cm1">
+                                <rect key="frame" x="20" y="462.5" width="374" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="CSC110A: Comp. Architecture Lab">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button13:" destination="VwI-2z-sdS" eventType="touchUpInside" id="2QV-c7-bIf"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="1sO-gV-zqh"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="N0J-Zn-Ug9"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="XO6-ts-hSg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNG-dr-LB2">
+                                <rect key="frame" x="20" y="302" width="353" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="CSC111: Assembly Programming">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button11:" destination="VwI-2z-sdS" eventType="touchUpInside" id="EG4-II-lhe"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="sVo-PQ-wZj"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="kH8-89-7wG"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="yRD-wd-sAq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sophomore Year: Fourth Semester" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWC-2n-hAQ">
+                                <rect key="frame" x="20" y="372" width="374" height="29.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jnw-XE-jII">
+                                <rect key="frame" x="20" y="512.5" width="362" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="CSC 175: Data Communication">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button14:" destination="VwI-2z-sdS" eventType="touchUpInside" id="mfR-gS-VBB"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="4Wp-5H-7Sk"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="KZK-IJ-iKS"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="qvy-SH-tcY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Note: CSC15S is Optional for Computer Science majors" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKC-xm-uIk">
+                                <rect key="frame" x="20" y="565" width="374" height="93"/>
+                                <color key="backgroundColor" red="0.99330487950000002" green="0.99970930810000003" blue="0.82900308749999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xe3-xx-QVW" firstAttribute="top" secondItem="ZhT-9H-EbD" secondAttribute="bottom" constant="8" id="0td-Rw-z6i"/>
+                            <constraint firstItem="40n-zb-dxt" firstAttribute="trailing" secondItem="BWC-2n-hAQ" secondAttribute="trailing" constant="20" id="5Dr-tt-vsM"/>
+                            <constraint firstItem="40n-zb-dxt" firstAttribute="trailing" secondItem="Jnw-XE-jII" secondAttribute="trailing" constant="32" id="6Ot-B5-9Nh"/>
+                            <constraint firstItem="ZhT-9H-EbD" firstAttribute="top" secondItem="gfU-TI-ueJ" secondAttribute="bottom" constant="8" id="6bV-WF-8Tf"/>
+                            <constraint firstItem="WQ2-Qp-Cm1" firstAttribute="top" secondItem="f4L-fp-D0q" secondAttribute="bottom" constant="8" id="8SO-Yk-XKP"/>
+                            <constraint firstItem="Jnw-XE-jII" firstAttribute="leading" secondItem="40n-zb-dxt" secondAttribute="leading" constant="20" id="8qa-hi-1Ln"/>
+                            <constraint firstItem="Xe3-xx-QVW" firstAttribute="leading" secondItem="40n-zb-dxt" secondAttribute="leading" constant="20" id="A5J-8E-Pe4"/>
+                            <constraint firstItem="40n-zb-dxt" firstAttribute="trailing" secondItem="aKC-xm-uIk" secondAttribute="trailing" constant="20" id="G4e-A3-WMV"/>
+                            <constraint firstItem="WQ2-Qp-Cm1" firstAttribute="leading" secondItem="40n-zb-dxt" secondAttribute="leading" constant="20" id="GbZ-XS-2gM"/>
+                            <constraint firstItem="Bjt-NJ-NUZ" firstAttribute="leading" secondItem="40n-zb-dxt" secondAttribute="leading" constant="20" id="HNJ-Mz-WGD"/>
+                            <constraint firstItem="gfU-TI-ueJ" firstAttribute="top" secondItem="Bjt-NJ-NUZ" secondAttribute="bottom" constant="15.5" id="Hq6-fs-L4r"/>
+                            <constraint firstItem="kc8-xk-kIU" firstAttribute="leading" secondItem="40n-zb-dxt" secondAttribute="leading" constant="20" id="J2s-KV-sz5"/>
+                            <constraint firstItem="BWC-2n-hAQ" firstAttribute="leading" secondItem="40n-zb-dxt" secondAttribute="leading" constant="20" id="K2l-Ef-731"/>
+                            <constraint firstItem="Bjt-NJ-NUZ" firstAttribute="top" secondItem="40n-zb-dxt" secondAttribute="top" constant="45" id="OrN-PA-BOd"/>
+                            <constraint firstItem="uNG-dr-LB2" firstAttribute="leading" secondItem="40n-zb-dxt" secondAttribute="leading" constant="20" id="Qbq-KN-G0a"/>
+                            <constraint firstItem="40n-zb-dxt" firstAttribute="trailing" secondItem="f4L-fp-D0q" secondAttribute="trailing" constant="52" id="R19-fR-OdD"/>
+                            <constraint firstItem="40n-zb-dxt" firstAttribute="trailing" secondItem="ZhT-9H-EbD" secondAttribute="trailing" constant="83" id="UFg-4l-iPG"/>
+                            <constraint firstItem="BWC-2n-hAQ" firstAttribute="top" secondItem="uNG-dr-LB2" secondAttribute="bottom" constant="28" id="VH0-3i-Qt9"/>
+                            <constraint firstItem="kc8-xk-kIU" firstAttribute="top" secondItem="Xe3-xx-QVW" secondAttribute="bottom" constant="8" id="brB-J6-hcs"/>
+                            <constraint firstItem="Jnw-XE-jII" firstAttribute="top" secondItem="WQ2-Qp-Cm1" secondAttribute="bottom" constant="8" id="cPS-fo-Lwo"/>
+                            <constraint firstItem="40n-zb-dxt" firstAttribute="trailing" secondItem="Bjt-NJ-NUZ" secondAttribute="trailing" constant="20" id="eYz-G2-aEu"/>
+                            <constraint firstItem="40n-zb-dxt" firstAttribute="trailing" secondItem="Xe3-xx-QVW" secondAttribute="trailing" constant="62" id="ehc-KK-wBZ"/>
+                            <constraint firstItem="aKC-xm-uIk" firstAttribute="top" secondItem="Jnw-XE-jII" secondAttribute="bottom" constant="7.5" id="f7W-eu-i3y"/>
+                            <constraint firstItem="f4L-fp-D0q" firstAttribute="leading" secondItem="40n-zb-dxt" secondAttribute="leading" constant="20" id="hyz-gZ-3uq"/>
+                            <constraint firstItem="40n-zb-dxt" firstAttribute="trailing" secondItem="uNG-dr-LB2" secondAttribute="trailing" constant="41" id="iXk-cx-KbU"/>
+                            <constraint firstItem="uNG-dr-LB2" firstAttribute="top" secondItem="kc8-xk-kIU" secondAttribute="bottom" constant="8" id="lUG-wc-cFa"/>
+                            <constraint firstItem="40n-zb-dxt" firstAttribute="trailing" secondItem="kc8-xk-kIU" secondAttribute="trailing" constant="125" id="pgK-Mc-trw"/>
+                            <constraint firstItem="40n-zb-dxt" firstAttribute="trailing" secondItem="WQ2-Qp-Cm1" secondAttribute="trailing" constant="20" id="r4q-lK-e1O"/>
+                            <constraint firstItem="f4L-fp-D0q" firstAttribute="top" secondItem="BWC-2n-hAQ" secondAttribute="bottom" constant="8" id="rED-of-Hro"/>
+                            <constraint firstItem="40n-zb-dxt" firstAttribute="trailing" secondItem="gfU-TI-ueJ" secondAttribute="trailing" constant="22" id="seg-Uw-Wxa"/>
+                            <constraint firstItem="ZhT-9H-EbD" firstAttribute="leading" secondItem="40n-zb-dxt" secondAttribute="leading" constant="20" id="uUR-ao-8Z4"/>
+                            <constraint firstItem="gfU-TI-ueJ" firstAttribute="leading" secondItem="40n-zb-dxt" secondAttribute="leading" constant="20" id="xNg-Ld-CRQ"/>
+                            <constraint firstItem="aKC-xm-uIk" firstAttribute="leading" secondItem="40n-zb-dxt" secondAttribute="leading" constant="20" id="xce-Iq-3kZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="40n-zb-dxt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d5L-Cz-SWw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wga-lG-6Jp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278.26086956521743" y="893.97321428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zq0-QC-cFh">
+            <objects>
+                <viewController id="apc-xQ-I4O" customClass="ViewController" customModule="Scheduler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zj6-DO-gjs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Junior Year: Fifth Semester" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6h-c6-u5s">
+                                <rect key="frame" x="20" y="58" width="333" height="32"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Junior Year: Sixth Semester" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPi-NV-SgN">
+                                <rect key="frame" x="20" y="325" width="333" height="32"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ec-FE-WxD">
+                                <rect key="frame" x="20" y="98" width="238" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="CSC120: Algorithms">
+                                    <color key="titleColor" red="8.1137901700000005e-05" green="0.42203879179999998" blue="0.2422850762" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button15:" destination="apc-xQ-I4O" eventType="touchUpInside" id="EPn-Fy-xEH"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="9fX-Fo-nrw"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="lYs-f8-10F"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="oit-Wo-Qpv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apI-WO-7jl">
+                                <rect key="frame" x="20" y="151" width="364" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="CSC 123: Programming Languages">
+                                    <color key="titleColor" red="8.1137901700000005e-05" green="0.42203879179999998" blue="0.2422850762" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button16:" destination="apc-xQ-I4O" eventType="touchUpInside" id="2Dt-JO-DPd"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="huo-xE-Lgi"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="3Q4-Dd-lgu"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="Ara-Ip-vmU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdD-w8-Pxd">
+                                <rect key="frame" x="20" y="200" width="360" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="CSC 170: Database Management">
+                                    <color key="titleColor" red="8.1137901700000005e-05" green="0.42203879179999998" blue="0.2422850762" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button17:" destination="apc-xQ-I4O" eventType="touchUpInside" id="8DT-c9-lnb"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="Mg8-ra-5y7"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="hTb-dO-IqL"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="sXP-YS-EU7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUn-Ov-aqf">
+                                <rect key="frame" x="20" y="365" width="309" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="CSC161: Automata Theory">
+                                    <color key="titleColor" red="8.1137901700000005e-05" green="0.42203879179999998" blue="0.2422850762" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button18:" destination="apc-xQ-I4O" eventType="touchUpInside" id="wHK-2y-qwY"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="Cwa-nM-kQQ"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="QpN-Fa-LRg"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="fx8-6b-nvg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9a-d5-GTX">
+                                <rect key="frame" x="20" y="471" width="309" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="CSC 183: Web Application">
+                                    <color key="titleColor" red="8.1137901700000005e-05" green="0.42203879179999998" blue="0.2422850762" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button20:" destination="apc-xQ-I4O" eventType="touchUpInside" id="gNa-t0-Uav"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="0Oa-aM-xII"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="AWZ-zY-YYN"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="kxS-Nf-AyT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIe-En-aI6">
+                                <rect key="frame" x="20" y="418" width="373" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="CSC 190:  Software Engineering">
+                                    <color key="titleColor" red="8.1137901700000005e-05" green="0.42203879179999998" blue="0.2422850762" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button19:" destination="apc-xQ-I4O" eventType="touchUpInside" id="SkE-qB-caV"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="YMR-TS-iCg"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="aSy-1o-WWQ"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="caH-KY-Mgr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBT-6w-Rl3">
+                                <rect key="frame" x="20" y="524" width="366" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="CSC 155: Systems Programming">
+                                    <color key="titleColor" red="8.1137901700000005e-05" green="0.42203879179999998" blue="0.2422850762" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button21:" destination="apc-xQ-I4O" eventType="touchUpInside" id="8UE-nt-V27"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="pxM-aj-jqZ"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="3YR-fG-E9C"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="bTt-dg-hIC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGs-Zn-e08">
+                                <rect key="frame" x="20" y="576" width="374" height="117"/>
+                                <color key="backgroundColor" red="0.99330487950000002" green="0.99970930810000003" blue="0.82900308749999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Note: For CS majors, 170, 183 and 155 are optional. However, students with just the CS major need to pick 2 electives to stay on track for graduation.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wu8-NW-lz1" firstAttribute="trailing" secondItem="yUn-Ov-aqf" secondAttribute="trailing" constant="85" id="1xy-5d-xV9"/>
+                            <constraint firstItem="apI-WO-7jl" firstAttribute="top" secondItem="4ec-FE-WxD" secondAttribute="bottom" constant="8" id="2Dp-Q8-3fz"/>
+                            <constraint firstItem="yUn-Ov-aqf" firstAttribute="leading" secondItem="wu8-NW-lz1" secondAttribute="leading" constant="20" id="2ch-7m-eBN"/>
+                            <constraint firstItem="n9a-d5-GTX" firstAttribute="top" secondItem="KIe-En-aI6" secondAttribute="bottom" constant="8" id="8K8-Fe-Y35"/>
+                            <constraint firstItem="wu8-NW-lz1" firstAttribute="trailing" secondItem="X6h-c6-u5s" secondAttribute="trailing" constant="61" id="Cep-uU-qPb"/>
+                            <constraint firstItem="wu8-NW-lz1" firstAttribute="trailing" secondItem="ZGs-Zn-e08" secondAttribute="trailing" constant="20" id="DGi-eL-MXj"/>
+                            <constraint firstItem="4ec-FE-WxD" firstAttribute="top" secondItem="X6h-c6-u5s" secondAttribute="bottom" constant="8" id="DVo-D1-Rss"/>
+                            <constraint firstItem="4ec-FE-WxD" firstAttribute="leading" secondItem="wu8-NW-lz1" secondAttribute="leading" constant="20" id="HqR-fX-gxv"/>
+                            <constraint firstItem="wu8-NW-lz1" firstAttribute="trailing" secondItem="KIe-En-aI6" secondAttribute="trailing" constant="21" id="KPg-Q9-Djr"/>
+                            <constraint firstItem="KIe-En-aI6" firstAttribute="leading" secondItem="wu8-NW-lz1" secondAttribute="leading" constant="20" id="R5F-Um-KDz"/>
+                            <constraint firstItem="QdD-w8-Pxd" firstAttribute="leading" secondItem="wu8-NW-lz1" secondAttribute="leading" constant="20" id="RdI-XT-oqY"/>
+                            <constraint firstItem="n9a-d5-GTX" firstAttribute="leading" secondItem="wu8-NW-lz1" secondAttribute="leading" constant="20" id="Rei-gM-nyq"/>
+                            <constraint firstItem="wu8-NW-lz1" firstAttribute="trailing" secondItem="4ec-FE-WxD" secondAttribute="trailing" constant="156" id="Rjn-r1-TN0"/>
+                            <constraint firstItem="X6h-c6-u5s" firstAttribute="leading" secondItem="wu8-NW-lz1" secondAttribute="leading" constant="20" id="dgU-u7-OJ3"/>
+                            <constraint firstItem="wu8-NW-lz1" firstAttribute="trailing" secondItem="n9a-d5-GTX" secondAttribute="trailing" constant="85" id="ehE-7t-Pno"/>
+                            <constraint firstItem="ZGs-Zn-e08" firstAttribute="leading" secondItem="wu8-NW-lz1" secondAttribute="leading" constant="20" id="fYo-Ov-ued"/>
+                            <constraint firstItem="jBT-6w-Rl3" firstAttribute="leading" secondItem="wu8-NW-lz1" secondAttribute="leading" constant="20" id="giC-Bc-206"/>
+                            <constraint firstItem="X6h-c6-u5s" firstAttribute="top" secondItem="wu8-NW-lz1" secondAttribute="top" constant="58" id="h1f-Qo-TKq"/>
+                            <constraint firstItem="wu8-NW-lz1" firstAttribute="trailing" secondItem="QdD-w8-Pxd" secondAttribute="trailing" constant="34" id="m4G-fZ-Vke"/>
+                            <constraint firstItem="wu8-NW-lz1" firstAttribute="trailing" secondItem="apI-WO-7jl" secondAttribute="trailing" constant="30" id="m7Z-kM-0KW"/>
+                            <constraint firstItem="dPi-NV-SgN" firstAttribute="leading" secondItem="wu8-NW-lz1" secondAttribute="leading" constant="20" id="oN3-Vu-uLs"/>
+                            <constraint firstItem="jBT-6w-Rl3" firstAttribute="top" secondItem="n9a-d5-GTX" secondAttribute="bottom" constant="8" id="pfM-af-xZQ"/>
+                            <constraint firstItem="QdD-w8-Pxd" firstAttribute="top" secondItem="apI-WO-7jl" secondAttribute="bottom" constant="8" id="qi6-A0-9H7"/>
+                            <constraint firstItem="KIe-En-aI6" firstAttribute="top" secondItem="yUn-Ov-aqf" secondAttribute="bottom" constant="8" id="rzM-UV-F4O"/>
+                            <constraint firstItem="wu8-NW-lz1" firstAttribute="trailing" secondItem="dPi-NV-SgN" secondAttribute="trailing" constant="61" id="s6v-W5-10r"/>
+                            <constraint firstItem="ZGs-Zn-e08" firstAttribute="top" secondItem="jBT-6w-Rl3" secondAttribute="bottom" constant="8" id="soF-XP-kbi"/>
+                            <constraint firstItem="wu8-NW-lz1" firstAttribute="trailing" secondItem="jBT-6w-Rl3" secondAttribute="trailing" constant="28" id="ufU-eq-T3O"/>
+                            <constraint firstItem="dPi-NV-SgN" firstAttribute="top" secondItem="QdD-w8-Pxd" secondAttribute="bottom" constant="83" id="w8s-OZ-Ywh"/>
+                            <constraint firstItem="apI-WO-7jl" firstAttribute="leading" secondItem="wu8-NW-lz1" secondAttribute="leading" constant="20" id="y9u-qA-BxD"/>
+                            <constraint firstItem="yUn-Ov-aqf" firstAttribute="top" secondItem="dPi-NV-SgN" secondAttribute="bottom" constant="8" id="ymQ-6U-XDq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wu8-NW-lz1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uAO-11-WPI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ENe-F5-r0h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086.9565217391305" y="395.75892857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="U5c-40-kxq">
+            <objects>
+                <viewController id="9wb-9k-Flx" customClass="ViewController" customModule="Scheduler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="29y-Ih-cuD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Senior Year: Seventh Semester" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8N7-sh-epJ">
+                                <rect key="frame" x="20" y="52" width="374" height="32"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kG2-vU-Asq">
+                                <rect key="frame" x="20" y="90.5" width="372" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="CSC115: Ethical Hacking">
+                                    <color key="titleColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button22:" destination="9wb-9k-Flx" eventType="touchUpInside" id="Z0w-UW-nam"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="SG7-zG-4uY"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="VX4-Pv-B1y"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="cHI-Gh-grl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z81-uT-0PT">
+                                <rect key="frame" x="20" y="142.5" width="372" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="CSC 185: Meth. of Random Process">
+                                    <color key="titleColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button23:" destination="9wb-9k-Flx" eventType="touchUpInside" id="h1w-7S-WNS"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="eVI-bK-fPf"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="ak9-cW-QBs"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="puR-d6-Y8w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdQ-1F-GIK">
+                                <rect key="frame" x="20" y="191.5" width="372" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="CSC 197A: Ind. Senior Design I">
+                                    <color key="titleColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button24:" destination="9wb-9k-Flx" eventType="touchUpInside" id="Qva-yx-6Lv"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="87I-vo-zfy"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="T0x-rQ-ucz"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="s6O-p5-kEk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfg-pY-vRL">
+                                <rect key="frame" x="20" y="243.5" width="372" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="CSC 198F: Senior Seminar">
+                                    <color key="titleColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button25:" destination="9wb-9k-Flx" eventType="touchUpInside" id="FRg-hB-FVp"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="CvJ-sp-UaM"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="daA-MW-yPN"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="tnM-J4-fCN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adz-OH-FO6">
+                                <rect key="frame" x="20" y="371" width="372" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="CSC 188: Network Security">
+                                    <color key="titleColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button26:" destination="9wb-9k-Flx" eventType="touchUpInside" id="iWu-ZL-paH"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="q0L-n0-vnv"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="PBm-aP-kS9"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="Swm-Ev-d5A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbs-J4-quj">
+                                <rect key="frame" x="20" y="423" width="372" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="CSC 197B: Ind. Senior Design II">
+                                    <color key="titleColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button27:" destination="9wb-9k-Flx" eventType="touchUpInside" id="lO1-vX-aZs"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="cPZ-Ea-iFi"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="Of3-mS-ctz"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="fvO-kN-Ptf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senior Year: Eighth Semester" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmL-WZ-xyH">
+                                <rect key="frame" x="20" y="332.5" width="374" height="30.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXL-3c-gp4">
+                                <rect key="frame" x="20" y="475" width="372" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="CSC 198S - Senior Seminar">
+                                    <color key="titleColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button28:" destination="9wb-9k-Flx" eventType="touchUpInside" id="Jvy-Jk-uRD"/>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="Vgo-jG-qBb"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="JE9-0R-gAw"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="kgA-HS-aba"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3A-dP-xwJ">
+                                <rect key="frame" x="20" y="527" width="374" height="93"/>
+                                <color key="backgroundColor" red="0.99330487950000002" green="0.99970930810000003" blue="0.82900308749999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Note: For CS majors 115 and 188 is optional. However, students with just the CS major must pick at least 1 elective to graduate on time.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HmL-WZ-xyH" firstAttribute="top" secondItem="jfg-pY-vRL" secondAttribute="bottom" constant="45" id="1lW-Ph-xK7"/>
+                            <constraint firstItem="K3A-dP-xwJ" firstAttribute="top" secondItem="aXL-3c-gp4" secondAttribute="bottom" constant="8" id="65I-3P-smn"/>
+                            <constraint firstItem="HmL-WZ-xyH" firstAttribute="leading" secondItem="6hD-uG-pyI" secondAttribute="leading" constant="20" id="6Az-w8-LxC"/>
+                            <constraint firstItem="6hD-uG-pyI" firstAttribute="trailing" secondItem="QdQ-1F-GIK" secondAttribute="trailing" constant="22" id="6Tq-OA-PrB"/>
+                            <constraint firstItem="Adz-OH-FO6" firstAttribute="leading" secondItem="6hD-uG-pyI" secondAttribute="leading" constant="20" id="6V7-pY-Qz9"/>
+                            <constraint firstItem="6hD-uG-pyI" firstAttribute="trailing" secondItem="kG2-vU-Asq" secondAttribute="trailing" constant="22" id="8bM-Vj-I0y"/>
+                            <constraint firstItem="Z81-uT-0PT" firstAttribute="top" secondItem="kG2-vU-Asq" secondAttribute="bottom" constant="8" id="Agd-Cd-PYA"/>
+                            <constraint firstItem="aXL-3c-gp4" firstAttribute="top" secondItem="dbs-J4-quj" secondAttribute="bottom" constant="8" id="BmT-cf-7u5"/>
+                            <constraint firstItem="6hD-uG-pyI" firstAttribute="trailing" secondItem="dbs-J4-quj" secondAttribute="trailing" constant="22" id="CZ6-0O-YlW"/>
+                            <constraint firstItem="6hD-uG-pyI" firstAttribute="trailing" secondItem="Z81-uT-0PT" secondAttribute="trailing" constant="22" id="DqI-fl-4qH"/>
+                            <constraint firstItem="6hD-uG-pyI" firstAttribute="trailing" secondItem="8N7-sh-epJ" secondAttribute="trailing" constant="20" id="DwB-6v-tv2"/>
+                            <constraint firstItem="8N7-sh-epJ" firstAttribute="leading" secondItem="6hD-uG-pyI" secondAttribute="leading" constant="20" id="Fku-gh-SOf"/>
+                            <constraint firstItem="6hD-uG-pyI" firstAttribute="trailing" secondItem="jfg-pY-vRL" secondAttribute="trailing" constant="22" id="Gw0-dj-5VT"/>
+                            <constraint firstItem="8N7-sh-epJ" firstAttribute="top" secondItem="6hD-uG-pyI" secondAttribute="top" constant="52" id="IoP-Dn-ujf"/>
+                            <constraint firstItem="jfg-pY-vRL" firstAttribute="leading" secondItem="6hD-uG-pyI" secondAttribute="leading" constant="20" id="KUU-qT-eGK"/>
+                            <constraint firstItem="dbs-J4-quj" firstAttribute="top" secondItem="Adz-OH-FO6" secondAttribute="bottom" constant="8" id="NHE-C1-tcV"/>
+                            <constraint firstItem="6hD-uG-pyI" firstAttribute="trailing" secondItem="HmL-WZ-xyH" secondAttribute="trailing" constant="20" id="OQa-Hb-nau"/>
+                            <constraint firstItem="kG2-vU-Asq" firstAttribute="leading" secondItem="6hD-uG-pyI" secondAttribute="leading" constant="20" id="QDr-RG-GzN"/>
+                            <constraint firstItem="QdQ-1F-GIK" firstAttribute="leading" secondItem="6hD-uG-pyI" secondAttribute="leading" constant="20" id="X2g-Tg-4GY"/>
+                            <constraint firstItem="jfg-pY-vRL" firstAttribute="top" secondItem="QdQ-1F-GIK" secondAttribute="bottom" constant="8" id="aMt-Ag-rR3"/>
+                            <constraint firstItem="dbs-J4-quj" firstAttribute="leading" secondItem="6hD-uG-pyI" secondAttribute="leading" constant="20" id="eaq-KM-h77"/>
+                            <constraint firstItem="6hD-uG-pyI" firstAttribute="trailing" secondItem="K3A-dP-xwJ" secondAttribute="trailing" constant="20" id="efi-H0-OQw"/>
+                            <constraint firstItem="K3A-dP-xwJ" firstAttribute="leading" secondItem="6hD-uG-pyI" secondAttribute="leading" constant="20" id="fJN-he-07Q"/>
+                            <constraint firstItem="Adz-OH-FO6" firstAttribute="top" secondItem="HmL-WZ-xyH" secondAttribute="bottom" constant="8" id="hgl-dp-8zf"/>
+                            <constraint firstItem="aXL-3c-gp4" firstAttribute="leading" secondItem="6hD-uG-pyI" secondAttribute="leading" constant="20" id="ipL-GE-FDK"/>
+                            <constraint firstItem="Z81-uT-0PT" firstAttribute="leading" secondItem="6hD-uG-pyI" secondAttribute="leading" constant="20" id="ppX-BI-Uos"/>
+                            <constraint firstItem="6hD-uG-pyI" firstAttribute="trailing" secondItem="Adz-OH-FO6" secondAttribute="trailing" constant="22" id="qxz-YR-dIf"/>
+                            <constraint firstItem="kG2-vU-Asq" firstAttribute="top" secondItem="8N7-sh-epJ" secondAttribute="bottom" constant="8" id="sPB-cD-JUS"/>
+                            <constraint firstItem="6hD-uG-pyI" firstAttribute="trailing" secondItem="aXL-3c-gp4" secondAttribute="trailing" constant="22" id="yL2-cv-Gya"/>
+                            <constraint firstItem="QdQ-1F-GIK" firstAttribute="top" secondItem="Z81-uT-0PT" secondAttribute="bottom" constant="8" id="znz-vI-Xfn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6hD-uG-pyI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v9V-Vt-Of3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wWa-vy-Qjb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="454" y="894"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7DI-SK-QD5">
+            <objects>
+                <viewController id="YSq-TZ-I6j" customClass="ViewController" customModule="Scheduler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MoD-ic-ITg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUy-dZ-QKg">
+                                <rect key="frame" x="20" y="108" width="340" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="CSC15: Python Programming"/>
+                                <connections>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="YpH-W2-98p"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="xMp-Ba-53U"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freshmen Year: First Semester" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbX-BH-iyu">
+                                <rect key="frame" x="20" y="68" width="374" height="32"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOB-w4-eL4">
+                                <rect key="frame" x="20" y="161" width="270" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="CSC14: Discrete Math I"/>
+                                <connections>
+                                    <action selector="Button2:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="acD-Sz-qte"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="5qb-YA-EEE"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="eXi-3q-net"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWM-G8-Mrm">
+                                <rect key="frame" x="20" y="214" width="219" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Math 71: Calculus I"/>
+                                <connections>
+                                    <action selector="Button3:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="AnD-Td-6A5"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="AKV-Ea-PEF"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="dSJ-lf-zXb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3J-AV-Rpk">
+                                <rect key="frame" x="20" y="380" width="310" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="CSC16: C++ Programming"/>
+                                <connections>
+                                    <action selector="Button4:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="CWV-VU-xwh"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="64l-Ug-fPf"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="FrV-Hf-XP7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freshmen Year: Second Semester" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UG9-xa-N9w">
+                                <rect key="frame" x="20" y="340" width="361.5" height="29.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQq-AG-5po">
+                                <rect key="frame" x="20" y="433" width="282" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="CSC24: Discrete Math II"/>
+                                <connections>
+                                    <action selector="Button5:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="exh-st-piA"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="B8g-nu-cEf"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="TWa-fy-952"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYP-wr-Bsz">
+                                <rect key="frame" x="20" y="486" width="229" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Math 72: Calculus II"/>
+                                <connections>
+                                    <action selector="Button6:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="T4q-Jc-mxI"/>
+                                    <action selector="button:" destination="zgC-O5-elj" eventType="touchUpInside" id="NHj-ge-JVr"/>
+                                    <action selector="button:" destination="YSq-TZ-I6j" eventType="touchUpInside" id="awS-0X-QJo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TYP-wr-Bsz" firstAttribute="leading" secondItem="41v-4x-G02" secondAttribute="leading" constant="20" id="2rq-D3-kGd"/>
+                            <constraint firstItem="bbX-BH-iyu" firstAttribute="leading" secondItem="41v-4x-G02" secondAttribute="leading" constant="20" id="4Xm-CA-lfs"/>
+                            <constraint firstItem="FOB-w4-eL4" firstAttribute="leading" secondItem="41v-4x-G02" secondAttribute="leading" constant="20" id="7p2-B8-sSy"/>
+                            <constraint firstItem="UG9-xa-N9w" firstAttribute="leading" secondItem="41v-4x-G02" secondAttribute="leading" constant="20" id="A1r-Ju-2Sz"/>
+                            <constraint firstItem="rUy-dZ-QKg" firstAttribute="top" secondItem="bbX-BH-iyu" secondAttribute="bottom" constant="8" id="COM-Zm-D2C"/>
+                            <constraint firstItem="FOB-w4-eL4" firstAttribute="top" secondItem="rUy-dZ-QKg" secondAttribute="bottom" constant="8" id="GIm-sI-oMn"/>
+                            <constraint firstItem="41v-4x-G02" firstAttribute="trailing" secondItem="UG9-xa-N9w" secondAttribute="trailing" constant="32.5" id="HQe-FT-oC9"/>
+                            <constraint firstItem="41v-4x-G02" firstAttribute="trailing" secondItem="FOB-w4-eL4" secondAttribute="trailing" constant="124" id="HVc-Rr-0yd"/>
+                            <constraint firstItem="i3J-AV-Rpk" firstAttribute="top" secondItem="UG9-xa-N9w" secondAttribute="bottom" constant="10.5" id="I9C-ff-RLd"/>
+                            <constraint firstItem="jWM-G8-Mrm" firstAttribute="top" secondItem="FOB-w4-eL4" secondAttribute="bottom" constant="8" id="Kdr-ti-Ete"/>
+                            <constraint firstItem="i3J-AV-Rpk" firstAttribute="leading" secondItem="41v-4x-G02" secondAttribute="leading" constant="20" id="LnB-fY-NX7"/>
+                            <constraint firstItem="41v-4x-G02" firstAttribute="trailing" secondItem="jWM-G8-Mrm" secondAttribute="trailing" constant="175" id="WZn-Wr-XLa"/>
+                            <constraint firstItem="41v-4x-G02" firstAttribute="trailing" secondItem="rUy-dZ-QKg" secondAttribute="trailing" constant="54" id="WzQ-ox-wv2"/>
+                            <constraint firstItem="bbX-BH-iyu" firstAttribute="top" secondItem="41v-4x-G02" secondAttribute="top" constant="68" id="bj9-Zr-mxl"/>
+                            <constraint firstItem="TYP-wr-Bsz" firstAttribute="top" secondItem="GQq-AG-5po" secondAttribute="bottom" constant="8" id="fXt-Yf-sKW"/>
+                            <constraint firstItem="41v-4x-G02" firstAttribute="trailing" secondItem="bbX-BH-iyu" secondAttribute="trailing" constant="20" id="grC-Ga-mVZ"/>
+                            <constraint firstItem="UG9-xa-N9w" firstAttribute="top" secondItem="jWM-G8-Mrm" secondAttribute="bottom" constant="81" id="iW8-H6-rYV"/>
+                            <constraint firstItem="41v-4x-G02" firstAttribute="trailing" secondItem="i3J-AV-Rpk" secondAttribute="trailing" constant="84" id="n7I-UF-vcq"/>
+                            <constraint firstItem="GQq-AG-5po" firstAttribute="top" secondItem="i3J-AV-Rpk" secondAttribute="bottom" constant="8" id="nch-Ns-nLo"/>
+                            <constraint firstItem="GQq-AG-5po" firstAttribute="leading" secondItem="41v-4x-G02" secondAttribute="leading" constant="20" id="oDG-tf-Fco"/>
+                            <constraint firstItem="rUy-dZ-QKg" firstAttribute="leading" secondItem="41v-4x-G02" secondAttribute="leading" constant="20" id="rRY-Rb-Bvz"/>
+                            <constraint firstItem="41v-4x-G02" firstAttribute="trailing" secondItem="TYP-wr-Bsz" secondAttribute="trailing" constant="165" id="seo-Qo-Q6S"/>
+                            <constraint firstItem="41v-4x-G02" firstAttribute="trailing" secondItem="GQq-AG-5po" secondAttribute="trailing" constant="112" id="yM1-8o-buB"/>
+                            <constraint firstItem="jWM-G8-Mrm" firstAttribute="leading" secondItem="41v-4x-G02" secondAttribute="leading" constant="20" id="z6p-se-Cmv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="41v-4x-G02"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uck-F1-mZe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5hn-KS-dpB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zgC-O5-elj" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1087" y="-238"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="72Z-Zu-XxV"/>
+        <segue reference="qEV-Ab-0bm"/>
+        <segue reference="SfI-U0-ODL"/>
+        <segue reference="jEa-Iw-ba7"/>
+    </inferredMetricsTieBreakers>
+</document>
